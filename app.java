@@ -46,9 +46,9 @@ public class app {
         System.out.print("Digite altura: ");
         double altura=teclado.nextInt();
         double vazaoNecessaria=altura*metragem*50;
-        System.out.println(vazaoNecessaria);
-        int tamanho = climas.length-1;
-        int contador = 0;
+        System.out.println(vazaoNecessaria);//vazão que o ambiente precisa para ser climatizado
+        int tamanho = climas.length-1;//para percorrer no while
+        int contador = 0;//Para limitar apenas duas opções de orçamento
         while(tamanho>=0){
             if (climas[tamanho].testaVazao(vazaoNecessaria)==0){
                 tamanho--;
